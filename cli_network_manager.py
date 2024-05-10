@@ -1,3 +1,22 @@
+"""
+Author: Luke Trujillo & Luis Coronel
+Date: 2024-05-09
+Version: 1.0
+
+This command-line network manager is a Python program designed to manage network traffic.
+
+Classes:
+1. Network Manager
+    - Controls interactions with the network
+
+2. CLI:
+    - Provides a command-line interface for users to interact with the network manager
+
+Dependencies:
+    - scapy: Packet manipulation and analysis.
+    - os 
+"""
+
 from os import system
 from scapy.all import *
 import threading
@@ -54,7 +73,6 @@ class NetworkManager:
     def pcap_gen(self):
         self.filename = input("What name do you want for your file name: ")
         system('sudo tcpdump -i wlan0 -w ' + str(self.filename))
-        system('^C')
         
     def scan_network(self):
         print("{ ACTIVE HOSTS } -----------------------------------------------------")

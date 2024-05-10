@@ -1,5 +1,5 @@
 """
-Author: Luke Trujillo & Luis Coronel
+Author: Luke Trujillo & Luis Coronel.
 Date: 2024-05-09
 Version: 1.0
 

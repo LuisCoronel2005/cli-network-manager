@@ -80,6 +80,7 @@ class NetworkManager:
         ans, _ = srp(Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(pdst="192.168.1.0/24"), timeout=2, verbose=1)
         for _, rcv in ans:
             ip_mac[rcv.psrc] = rcv.sprintf("%Ether.src%")
+            print(rcv)
         print("{ END } ------------------------------------------------------------")
         return ip_mac
 

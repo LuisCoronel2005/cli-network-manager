@@ -71,7 +71,8 @@ class NetworkManager:
         print("{ END } ------------------------------------------------------------")
 
     def pcap_gen(self):
-        self.filename = input("What name do you want for your file name: ")
+        print("  \033[32mhelp:\033[0m This command must be used in a different terminal to capture everything desired, to quit '^C' ")
+        self.filename = input("\033[34mWhat name do you want for your file name: ")
         system('sudo tcpdump -i wlan0 -w ' + str(self.filename))
         
     def scan_network(self):

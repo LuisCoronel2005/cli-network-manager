@@ -8,9 +8,11 @@ This command-line network manager is a Python program designed to manage network
 - Scan for active hosts
 - Send custom packets
 - Perform SYN flood attacks
+- download pcaps
 
 ## Dependencies
 - scapy
+- os
 
 ## Installation
 1. Clone the repository:

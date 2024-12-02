@@ -1,5 +1,5 @@
 """
-Author: lyk64
+Author: lyk64 & LuisCoronel2005
 Date: 2024-05-09
 Version: 1.0
 
